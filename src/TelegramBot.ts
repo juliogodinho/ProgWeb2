@@ -1,5 +1,8 @@
-require('dotenv').config();
-const TelegramBot = require('node-telegram-bot-api');
+import { config } from "dotenv";
+import TelegramBot = require("node-telegram-bot-api");
+config();
+// require('dotenv').config();
+// const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
 const token = process.env.TOKEN;
