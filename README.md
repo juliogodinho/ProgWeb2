@@ -1,37 +1,29 @@
-# Anotações importantes :joy:
+sentences that start with npm and npx are terminal commands
+npm run dev
+npm install dot env --save
+npm install typescript --dev
+npx tsc
+npx tsc --init
+on file tsconfig.json add:  
+    "rootDir": "./src",
+    "outDir": "./build",
+npm install --save-dev @types/node-telegram-bot-api
+install extensions:
+    prisma insider
+    SQLite Viewer
+    Code Runner
+copy all code on schema.prisma
+delete folder prisma
+npm install prisma --save-dev
+npx prisma init --datasource-provider sqlite
+paste code copied on schema.prisma before prisma folder deletion, on the new schema.prisma file
+save schema.prisma
+npx prisma migrate dev --name init
+to access prisma database use comand:
+    npx prisma studio
+    press ctrl+C to exit prisma studio
+to run the telegram bot:
+    npx tsc
+    open file TelegramBot.js
+    click on run code on the top right. To stop running code press stop buttom.
 
-## Comandos do Git
-
-- git init
-- git add .
-- git status
-- git commit -m "uma mensagem"
-- git log
-- git push -u origin main
-- git pull
-
-# AULA WEB 2 - LINKS
-
-https://expressjs.com/pt-br/
-
-https://www.npmjs.com/package/node-telegram-bot-api
-
-https://nodejs.org/en/learn/getting-started/introduction-to-nodejs
-
-https://teachablemachine.withgoogle.com/
-
-https://www.kaggle.com/
-
-https://git-scm.com/download/win
-
-https://docs.npmjs.com/cli/v6/commands
-
-https://gist.github.com/gessela/2a8891e968ab61aa5325059706d87094
-
-https://www.markdownguide.org/cheat-sheet/
-
-https://npmjs.com/package/dotenv
-
-https://www.npmjs.com/package/nodemon
-
-https://git-scm.com/docs
