@@ -57,7 +57,6 @@ if (typeof token === "string") {
                 if (usumsgstring != 'email' && usumsgstring != 'sair') {
                     if (horamsg >= 9 && horamsg < 18) {
                         bot.sendMessage(chatId, 'https://faesa.br');
-                        bot.sendMessage(chatId, 'Digite sair caso não queira mais receber mensagens');
                     }
                     else {
                         bot.sendMessage(chatId, 'Horário de funcionamento: 9:00 as 18:00.');
@@ -130,7 +129,7 @@ if (typeof token === "string") {
             }
             else {
                 if (usumsgstring2 === 'sair') {
-                    bot.sendMessage(chatId, 'Obrigado por usar o bot. Sua sessão será terminada.');
+                    bot.sendMessage(chatId, 'Obrigado por usar o bot.');
                     //bot.stopPolling();
                 }
                 else {

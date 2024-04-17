@@ -1,3 +1,4 @@
+telegram bot name: ProgWeb2
 sentences that start with npm and npx are terminal commands
 npm run dev
 npm install dot env --save

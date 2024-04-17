@@ -11,9 +11,7 @@ const token = process.env.TOKEN;
 //const bot = new TelegramBot(token!, {polling: true});
 if (typeof token === "string"){
   const bot = new TelegramBot(token, { polling: true });
-
   const prisma = new PrismaClient();
-
   bot.onText(/\/echo (.+)/, (msg, match) => {
     const chatId = msg.chat.id;
     if(match) {
@@ -23,13 +21,11 @@ if (typeof token === "string"){
         bot.sendMessage(chatId, "Ocorreu um erro na comunicação");
     }
   });
-
   /*bot.on("message", (msg) => {
     const chatId = msg.chat.id;
 
     bot.sendMessage(chatId, "Received your message");
   });*/
-
   bot.on('message', (msg) => {
     const chatId = msg.chat.id;
     const usumsg = msg.text;
@@ -47,7 +43,6 @@ if (typeof token === "string"){
         if (usumsgstring != 'email' && usumsgstring != 'sair'){
           if (horamsg >= 9 && horamsg < 18){
             bot.sendMessage(chatId, 'https://faesa.br');
-            bot.sendMessage(chatId, 'Digite sair caso não queira mais receber mensagens');
           }else{
             bot.sendMessage(chatId, 'Horário de funcionamento: 9:00 as 18:00.');
             bot.sendMessage(chatId,'Digite email se deseja deixar seu email e sair se deseja sair', {
@@ -115,7 +110,7 @@ if (typeof token === "string"){
         });
       }else{
           if(usumsgstring2 === 'sair'){
-            bot.sendMessage(chatId, 'Obrigado por usar o bot. Sua sessão será terminada.');
+            bot.sendMessage(chatId, 'Obrigado por usar o bot.');
             //bot.stopPolling();
           }else{
             //bot.sendMessage(chatId, 'passei aqui else');
