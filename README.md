@@ -1,5 +1,10 @@
 telegram bot name: ProgWeb2
 sentences that start with npm and npx are terminal commands
+
+create file with with name .env with text:
+TOKEN=putbottokenhere
+DATABASE_URL="file:./dev.db"
+
 npm run dev
 npm install dot env --save
 npm install typescript --dev
